@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+Reusable Charts Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This library provides a collection of interactive and visually appealing charts implemented using React and D3.js. These charts offer powerful data visualization capabilities for your web applications. The library includes the following chart components:
 
-## Available Scripts
+LineChart: A line chart that displays the trend of a numerical dataset over a continuous range. It supports customizable attributes such as width, height, line color, and axis labels.
 
-In the project directory, you can run:
+ScatterPlot: A scatter plot that visualizes the relationship between two numerical variables. It allows you to plot data points and customize attributes such as width, height, point color, and axis labels.
 
-### `npm start`
+PieChart: A pie chart that represents the distribution of categorical data as proportions of a whole. It supports custom colors, labels, and interactive features like hover effects.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+AreaChart: An area chart that shows the magnitude or proportion of values over a continuous range. It offers customization options for width, height, area color, and the ability to include labels.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation
+To use these charts in your project, you need to install the charts-library package. You can do this by running the following command:
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install charts-library
+Usage
+Import the desired chart component from the charts-library package, and render it within your React application.
 
-### `npm run build`
+Example usage of LineChart:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+import React from 'react';
+import LineChart from 'charts-library';
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+const App = () => {
+  const data = [10, 20, 30, 40, 50];
+  const width = 500;
+  const height = 300;
+  const lineColor = '#ff0000';
+  const xLabel = 'X Axis';
+  const yLabel = 'Y Axis';
 
-### `npm run eject`
+  return (
+    <div>
+      <h1>Line Chart Example</h1>
+      <LineChart
+        data={data}
+        width={width}
+        height={height}
+        lineColor={lineColor}
+        xLabel={xLabel}
+        yLabel={yLabel}
+      />
+    </div>
+  );
+};
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+export default App;
+You can similarly use other chart components such as ScatterPlot, PieChart, and AreaChart by importing them and passing the required props.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you have any questions, feedback, or suggestions, please don't hesitate to contact me.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy charting!
