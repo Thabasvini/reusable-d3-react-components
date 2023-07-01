@@ -10,6 +10,10 @@ PieChart: A pie chart that represents the distribution of categorical data as pr
 
 AreaChart: An area chart that shows the magnitude or proportion of values over a continuous range. It offers customization options for width, height, area color, and the ability to include labels.
 
+Histogram: A histogram is a graphical representation of the distribution of data. It is commonly used to display the frequency or count of values within specified intervals or bins. In the context of React, a histogram can be implemented as a reusable component that encapsulates the logic and rendering of the histogram chart. This allows developers to easily incorporate histogram visualizations into their React applications by passing in data, width, height, and other necessary parameters. 
+
+HeatMap: A Heatmap is a powerful data visualization technique that uses color to represent values in a matrix-like layout. It provides a concise summary of data by displaying patterns, trends, and variations. The Heatmap component provided here is a reusable React component that enables you to effortlessly create and display heatmaps. With customizable dimensions and labels for the x-axis and y-axis, you can effectively visualize your data in a visually appealing and informative manner. Leveraging the capabilities of D3.js, the Heatmap component dynamically generates the heatmap based on the input data, ensuring scalability and accuracy.
+
 Installation
 To use these charts in your project, you need to install the charts-library package. You can do this by running the following command:
 
